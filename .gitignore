@@ -1,18 +1,48 @@
 ```
 # WordPress specific ignores
-wp-content/plugins/smart-quotation-invoice/vendor/
-wp-content/plugins/smart-quotation-invoice/node_modules/
-wp-content/plugins/smart-quotation-invoice/build/
-wp-content/plugins/smart-quotation-invoice/dist/
-wp-content/plugins/smart-quotation-invoice/.env
-wp-content/plugins/smart-quotation-invoice/.env.local
-wp-content/plugins/smart-quotation-invoice/*.env.*
-wp-content/plugins/smart-quotation-invoice/.DS_Store
-wp-content/plugins/smart-quotation-invoice/Thumbs.db
-wp-content/plugins/smart-quotation-invoice/*.log
-wp-content/plugins/smart-quotation-invoice/*.tmp
-wp-content/plugins/smart-quotation-invoice/__pycache__/
-wp-content/plugins/smart-quotation-invoice/*.pyc
-wp-content/plugins/smart-quotation-invoice/.vscode/
-wp-content/plugins/smart-quotation-invoice/.idea/
+wp-content/cache/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# PHP related
+*.php~
+*.php.bak
+*.bak
+
+# Dependencies
+vendor/
+node_modules/
+
+# Build artifacts
+assets/css/*.min.css
+assets/js/*.min.js
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 ```
