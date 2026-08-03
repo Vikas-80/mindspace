@@ -1,0 +1,48 @@
+```
+# WordPress specific ignores
+wp-content/cache/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# PHP related
+*.php~
+*.php.bak
+*.bak
+
+# Dependencies
+vendor/
+node_modules/
+
+# Build artifacts
+assets/css/*.min.css
+assets/js/*.min.js
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+```
